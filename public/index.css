@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.header {
+    background: #000000;
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.header__logo {
+    align-self: center;
+    width: 17vw;
+}
+
+.header__player {
+    display: flex;
+    background-repeat: no-repeat;
+    width: 47vw;
+    height: 60px;
+}
+
+.header__link {
+}
+
+.header__disk {
+    height: 60px;
+    width: 120px;
+}
+
+.player__back {
+    height: 40px;
+    width: 40px;
+    background-image: url("player_controls.png");
+    background-position: 0px -5px;
+    align-self: center;
+}
+
+.player__pause {
+    height: 40px;
+    width: 40px;
+    background-image: url("player_controls.png");
+    background-position: -40px -5px;
+    align-self: center;
+}
+
+.player__forward {
+    height: 40px;
+    width: 40px;
+    background-image: url("player_controls.png");
+    background-position: -120px -5px;
+    align-self: center;
+}
+
+.header__nav {
+    color: #fff;
+    height: 60px;
+    width: 37vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: .85;
+}
+
+.hot {
+    // background: #00ff90;
+    width: 75vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.music__header {
+    width: 100%;
+    height: 10vh;
+    font-size: 44px;
+    text-align: center;
+}
+
+
+
+.topic__header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.red-underline {
+    background: #b90000;
+    content: "";
+    height: 3px;
+    margin-left: 48%;
+    width: 50px;
+}
+
+
+
+.artist-card--photo {
+    background: #0a00ff;
+    border-radius: 100px;
+    height: 25vh;
+    width: 25vh;
+}
+
+
+.popular-tracks {
+    // background: #fb5050;
+    width: 75vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    padding: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+.track-card {
+    // background: #ffa200;
+    margin: 1vh;
+    width: 23vw;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 80px 240px;
+    grid-template-rows: 30px 30px 20px;
+}
+
+.track-card--image {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 80px;
+    height: 80px;
+}
+
+.track-card--header {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.track-card--artist {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.track-card--description {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-size: 12px;
+}
+
+.footer {
+    width: 100%;
+    height: 40%;
+    background: #111;
+    padding-bottom: 2%;
+}
+
+.footer__nav {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top {
+    width: 75%;
+    height: 20%;
+    margin-left: 10%;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    width: 75%;
+    height: 20%;
+    margin-left: 10%;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.footer-border {
+    border-top: 1px groove;
+    border-color: #808080;
+    width: 100%;
+}
+
+.footer__link {
+    color: #fff;
+}
+
+.footer__h {
+    color: #666;
+}
+
+.footer-bottom__local {
+    width: 100%;
+    color: #666;
+    font-size: 13px;
+}
+
+.footer-bottom__more-info {
+    width: 50vw;
+    color: #666;
+    font-size: 12px;
+}
+
+.footer-bottom__more-info-li {
+    display: inline-block;
+}
+
+.footer-bottom__time-zone {
+    width: 50%;
+    color: #666;
+    font-size: 13px;
+}
+
+.footer-bottom__audioscr {
+    width: 12%;
+    height: 12%;
+}
+
+.footer-bottom__left {
+    width: 70%;
+    height: 20%;
+}
+
+.footer-bottom__audioscr {
+    color: aliceblue;
+    text-align: right;
+    font-size: 12px;
+}
+
+
+.footer__audioscr--image {
+    width: 55px;
+    height: 30px;
+}
+
+.item-list {
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+.item-list__list {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.item-list__cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 50%;
+    width: 25%;
+    background: #00ff90;
+}
+
+.search-body {
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 60%;
+}
+
+.item-list--more-button {
+    text-align: end;
+    width: 100%;
+    // background: #ffa200;
+    margin-top: 1%;
+    color: #005399;
+}
+
+.track-list {
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+.track-list__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-list__cell {
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1%;
+}
+
+.artist-card--description {
+    font-size: 12px;
+}
+
+.track-list--play-image {
+    height: auto;
+    width: auto;
+}
+
+.track-list--image {
+    height: 100%;
+    width: 6vh;
+}
+
+.track-list--like-image {
+    height: 50%;
+    width: 3vh;
+}
+
+.track-list--track-link {
+}
+
+.track-list--artist-link {
+}
+
+.track-list--time {
+}
+
+.search-body__type {
+    width: 90%;
+    display: flex;
+}
+
+.search-field {
+    border: 0;
+    border-right: groove;
+    height: 30px;
+    width: 95%;
+}
+
+.search-form {
+    height: 35px;
+    width: 90%;
+}
+
+.search--image {
+    height: 15px;
+    width: 15px;
+}
+
+.ads-body {
+    width: 10%;
+    margin-top: 10%;
+}
+
+.ads-link {
+    text-decoration: underline;
+}
+
+.search-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search-body__type {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.search-body__type__item {
+    margin-right: 2%;
+}

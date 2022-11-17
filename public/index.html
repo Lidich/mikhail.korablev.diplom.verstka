@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description"
+          content="Web site created using create-react-app" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -19,19 +18,333 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-  </head>
+
+</head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      <header class="header">
+          <div class="header__player">
+              <div class="header__disk"><img src="header_disk.png" /></div>
+              <div class="player__back"></div>
+              <div class="player__pause"></div>
+              <div class="player__forward"></div>
+          </div>
+          <div class="header__logo">
+              <img src="logo.png" />
+          </div>
+          <nav class="header__nav">
+              <a class="header__link link"><img src="searchbtn.png" /></a>
+              <a class="header__link link">Home</a>
+              <a class="header__link link">Live</a>
+              <a class="header__link link">Music</a>
+              <a class="header__link link">Charts</a>
+              <a class="header__link link">Events</a>
+              <a class="header__link link">Features</a>
+              <a class="header__link link"><img src="account.png" /></a>
+          </nav>
+      </header>
+      <h1 class="music__header">Music</h1>
+      <div class="topic__header">
+          <h2>Hot right now</h2>
+          <div class="red-underline"></div>
+      </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      <div class="hot">
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="vibe-rabbit.gif" class="artist-card--photo" />
+              <h3 class="artist-card--header">Kanye West</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Pop</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+          <div class="artist-card">
+              <img src="bike.png" class="artist-card--photo" />
+              <h3 class="artist-card--header">Серёга Пират</h3>
+              <a class="artist-card--description link">Rap</a>
+              <a class="artist-card--description link">Rock</a>
+              <a class="artist-card--description link">HipHop</a>
+          </div>
+      </div>
+      <div class="topic__header">
+          <h2>Hot right now</h2>
+          <div class="red-underline"></div>
+      </div>
+      <div class="popular-tracks">
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Wolves</h3>
+              <h3 class="track-card--artist">Kanye West</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Wolves</h3>
+              <h3 class="track-card--artist">Kanye West</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+          <div class="track-card">
+              <img src="bike.png" class="track-card--image" />
+              <h3 class="track-card--header">Мой байк</h3>
+              <h3 class="track-card--artist">Серёга Пират</h3>
+              <h4 class="track-card--description">Rap</h4>
+          </div>
+
+      </div>
+      <footer class="footer">
+          <div class="footer-top">
+              <div class="footer__nav">
+                  <div>
+                      <h3 class="footer__h">COMPANY</h3>
+                      <a class="footer__link link">About Last.fm</a>
+                      <br />
+                      <a class="footer__link link">Contact Us</a>
+                      <br />
+                      <a class="footer__link link">Jobs</a>
+                  </div>
+                  <div>
+                      <h3 class="footer__h">HELP</h3>
+                      <a class="footer__link link">Track My Music</a>
+                      <br />
+                      <a class="footer__link link">Commutnity Support</a>
+                      <br />
+                      <a class="footer__link link">Community Guidelines</a>
+                      <br />
+                      <a class="footer__link link">Help</a>
+                  </div>
+                  <div>
+                      <h3 class="footer__h">GOODIES</h3>
+                      <a class="footer__link link">Download Scrobbler</a>
+                      <br />
+                      <a class="footer__link link">Developer API</a>
+                      <br />
+                      <a class="footer__link link">Free Music Downloads</a>
+                      <br />
+                      <a class="footer__link link">Merchandise</a>
+                  </div>
+                  <div>
+                      <h3 class="footer__h">ACCOUNT</h3>
+                      <a class="footer__link link">Inbox</a>
+                      <br />
+                      <a class="footer__link link">Settings</a>
+                      <br />
+                      <a class="footer__link link">Last.fm Pro</a>
+                      <br />
+                      <a class="footer__link link">Logout</a>
+                  </div>
+                  <div>
+                      <h3 class="footer__h">FOLLOW US</h3>
+                      <a class="footer__link link">Facebook</a>
+                      <br />
+                      <a class="footer__link link">Twitter</a>
+                      <br />
+                      <a class="footer__link link">Instagram</a>
+                      <br />
+                      <a class="footer__link link">YouTube</a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-border">
+              <div class="footer-bottom">
+                  <div class="footer-bottom__left">
+                      <div class="footer-bottom__local">
+                          <a class="footer-bottom__active-link link">English</a>
+                          <a class="footer-bottom__link link">Deutsch</a>
+                          <a class="footer-bottom__link link">Español</a>
+                          <a class="footer-bottom__link link">Français</a>
+                          <a class="footer-bottom__link link">Italiano</a>
+                          <a class="footer-bottom__link link">日本語</a>
+                          <a class="footer-bottom__link link">Polsk</a>
+                          <a class="footer-bottom__link link">Português</a>
+                          <a class="footer-bottom__link link">Русский</a>
+                          <a class="footer-bottom__link link">Svenska</a>
+                          <a class="footer-bottom__link link">Türkçe</a>
+                          <a class="footer-bottom__link link">简体中文</a>
+                      </div>
+                      <div class="footer-bottom__time-zone">
+                          <a class="time-zone__h">Time zone:</a>
+                          <a class="time-zone__answer">Europe/Moscow</a>
+                      </div>
+                      <ul class="footer-bottom__more-info">
+                          <li class="footer-bottom__more-info-li"><a class="link">CBS Interactive</a></li>
+                          <li class="footer-bottom__more-info-li"><span>© 2022 Last.fm Ltd. All rights reserved</span></li>
+                          <li class="footer-bottom__more-info-li"><a class="link">Terms of Use</a></li>
+                          <li class="footer-bottom__more-info-li"><a class="link">Terms of Use</a></li>
+                          <li class="footer-bottom__more-info-li"><a class="link">Privacy Policy</a></li>
+                          <li class="footer-bottom__more-info-li"><a class="link">Legal Policies</a></li>
+                          <li class="footer-bottom__more-info-li"><a class="link">Cookies Policy</a></li>
+                          <li class="footer-bottom__more-info-li"><a class="link">Cookie Information</a></li>
+                          <li class="footer-bottom__more-info-li"><a class="li   nk">Jobs at ViacomCBS</a></li>
+                          <li class="footer-bottom__more-info-li"><a class="link">Last.fm Music</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-bottom__audioscr">
+                      <p class="footer__audioscr--title">Audioscrobbler</p>
+                      <img src="audioscr.png" class="footer__audioscr--image" />
+                  </div>
+              </div>
+          </div>
+      </footer>
   </body>
 </html>
