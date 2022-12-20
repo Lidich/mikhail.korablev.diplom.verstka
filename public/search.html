@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="CreateNodes.js" defer></script>
+    <script src="Search.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -15,7 +17,7 @@
             <div class="player__forward"></div>
         </div>
         <div class="header__logo">
-            <img src="logo.png" />
+            <a href="./"><img src="logo.png" /></a>
         </div>
         <nav class="header__nav">
             <a class="header__link link"><img src="searchbtn.png" /></a>
@@ -30,7 +32,7 @@
     </header>
     <div class="search-page">
         <div class="search-body">
-            <h1>Search results for "never gonna give"</h1>
+            <h1 class="search-header">Search</h1>
             <div class="search-body__type">
                 <h3 class="search-body__type__item">Top results</h3>
                 <h3 class="search-body__type__item">Artists</h3>
@@ -43,162 +45,18 @@
             </form>
             <div class="item-list">
                 <h2 class="item-list--title">Artists</h2>
-                <div class="item-list__list">
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">1768 listeners</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">1768 listeners</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">1768 listeners</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">1768 listeners</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">1768 listeners</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">1768 listeners</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">1768 listeners</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">1768 listeners</span>
-                    </div>
+                <div class="item-list__artists">
                 </div>
                 <p class="item-list--more-button"><a class="link">More artists ></a></p>
             </div>
             <div class="item-list">
                 <h2 class="item-list--title">Albums</h2>
-                <div class="item-list__list">
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">Rick Astley</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">Rick Astley</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">Rick Astley</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">Rick Astley</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">Rick Astley</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">Rick Astley</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">Rick Astley</span>
-                    </div>
-                    <div class="item-list__cell">
-                        <h3 class="item-list__cell--h">Never Gonna Give You Up</h3>
-                        <span class="item-list__cell--sub-h">Rick Astley</span>
-                    </div>
+                <div class="item-list__albums">
                 </div>
                 <p class="item-list--more-button"><a class="link">More albums ></a></p>
             </div>
             <div class="track-list">
                 <div class="track-list__list">
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
-                    <div class="track-list__cell">
-                        <a class="track-list--play-button"><img src="play-button.png" class="track-list--play-image" /></a>
-                        <img src="bike.png" class="track-list--image" />
-                        <a class="track-list--like-button"><img src="like-button.png" class="track-list--like-image" /></a>
-                        <a class="track-list--track-link link">Never Gonna Give You Up</a>
-                        <a class="track-list--artist-link link">Rick Astley</a>
-                        <span class="track-list--time">3:22</span>
-                    </div>
                 </div>
                 <p class="item-list--more-button"><a class="link">More tracks ></a></p>
             </div>

@@ -16,9 +16,10 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    -->     
     <title>React App</title>
-
+    <script src="CreateNodes.js" defer></script>
+    <script src="Main.js" defer></script>
 </head>
   <body>
       <header class="header">
@@ -29,10 +30,10 @@
               <div class="player__forward"></div>
           </div>
           <div class="header__logo">
-              <img src="logo.png" />
+            <a href="./"><img src="logo.png" /></a>
           </div>
           <nav class="header__nav">
-              <a class="header__link link"><img src="searchbtn.png" /></a>
+              <a href="./search.html" class="header__link link"><img src="searchbtn.png" /></a>
               <a class="header__link link">Home</a>
               <a class="header__link link">Live</a>
               <a class="header__link link">Music</a>
@@ -49,208 +50,12 @@
       </div>
 
       <div class="hot">
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="vibe-rabbit.gif" class="artist-card--photo" />
-              <h3 class="artist-card--header">Kanye West</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Pop</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-          <div class="artist-card">
-              <img src="bike.png" class="artist-card--photo" />
-              <h3 class="artist-card--header">Серёга Пират</h3>
-              <a class="artist-card--description link">Rap</a>
-              <a class="artist-card--description link">Rock</a>
-              <a class="artist-card--description link">HipHop</a>
-          </div>
-      </div>
+      </div>    
       <div class="topic__header">
-          <h2>Hot right now</h2>
+          <h2>Popular tracks</h2>
           <div class="red-underline"></div>
       </div>
-      <div class="popular-tracks">
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Wolves</h3>
-              <h3 class="track-card--artist">Kanye West</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Wolves</h3>
-              <h3 class="track-card--artist">Kanye West</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-          <div class="track-card">
-              <img src="bike.png" class="track-card--image" />
-              <h3 class="track-card--header">Мой байк</h3>
-              <h3 class="track-card--artist">Серёга Пират</h3>
-              <h4 class="track-card--description">Rap</h4>
-          </div>
-
+      <div class="popular-tracks"> 
       </div>
       <footer class="footer">
           <div class="footer-top">
