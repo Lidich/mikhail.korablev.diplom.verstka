@@ -1,23 +1,38 @@
-import React from 'react';
+import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./MainPage/MainPage";
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
+import { SearchContext } from "./context";
+import SearchPage from "./SearchPage/LeftColumn/SearchPage";
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+function App() {
+  const [searchRequest, setSearchRequest] = useState<string>("");
 
-// export default App;
+  useEffect(() => {
+    const request = localStorage.getItem("request") || "";
+    setSearchRequest(request);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("request", searchRequest);
+  }, [searchRequest]);
+
+  const handleSearchRequest = (value: string) => {
+    setSearchRequest(value);
+  };
+  return (
+    <div>
+      <SearchContext.Provider value={{ searchRequest, handleSearchRequest }}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="searchPage" element={<SearchPage />} />
+        </Routes>
+        <Footer />
+      </SearchContext.Provider>
+    </div>
+  );
+}
+
+export default App;
